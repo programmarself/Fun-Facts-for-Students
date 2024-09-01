@@ -198,24 +198,6 @@ english_fact, urdu_fact = st.session_state.fact
 st.markdown(f'<div class="fact">{english_fact}</div>', unsafe_allow_html=True)
 st.markdown(f'<div class="urdu-text">{urdu_fact}</div>', unsafe_allow_html=True)
 
-# JavaScript to copy text to clipboard
-copy_js = """
-    <script>
-    function copyToClipboard(text) {
-        const el = document.createElement('textarea');
-        el.value = text;
-        document.body.appendChild(el);
-        el.select();
-        document.execCommand('copy');
-        document.body.removeChild(el);
-    }
-    </script>
-"""
-
-# Display copy buttons and attach JS to them
-st.markdown(copy_js, unsafe_allow_html=True)
-st.markdown(f'<button class="copy-button" onclick="copyToClipboard(\'{english_fact}\')">Copy English Fact</button>', unsafe_allow_html=True)
-st.markdown(f'<button class="copy-button" onclick="copyToClipboard(\'{urdu_fact}\')">Copy Urdu Fact</button>', unsafe_allow_html=True)
 
 # Footer
 st.markdown("""
