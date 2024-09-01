@@ -123,7 +123,7 @@ st.set_page_config(page_title="Student Fun App", page_icon=":tada:")
 st.markdown("""
     <style>
         body {
-            font-family: 'Times New Roman', sans-serif;
+            font-family: 'Times New Roman (Headings CS)', sans-serif;
         }
         .title {
             text-align: center;
