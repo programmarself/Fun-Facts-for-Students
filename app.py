@@ -198,3 +198,13 @@ st.markdown("""
         Conducted By: PAK ANGELS, iCodeGuru, ASPIRE PAKISTAN
     </div>
 """, unsafe_allow_html=True)
+
+# Display fun facts with a copy button
+for fact in fun_facts:
+    st.markdown(f"<div class='fact'><strong>English:</strong> {fact['english']}</div>", unsafe_allow_html=True)
+    st.markdown(f"<div class='fact'><strong>Urdu:</strong> {fact['urdu']}</div>", unsafe_allow_html=True)
+    if st.button('Copy English'):
+        st.write('Copied to clipboard:', fact['english'])
+    if st.button('Copy Urdu'):
+        st.write('Copied to clipboard:', fact['urdu'])
+    st.markdown("---")
