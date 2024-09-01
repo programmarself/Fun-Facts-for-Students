@@ -111,6 +111,8 @@ fun_facts = [
      'ایک نیا پیدا ہونے والا آکٹوپس مچھر کے برابر ہوتا ہے۔')
 ]
 
+
+
 # Function to get a random fun fact and its Urdu translation
 def get_fun_fact():
     fact = random.choice(fun_facts)
@@ -164,6 +166,22 @@ st.markdown("""
         .urdu-text:hover {
             transform: scale(1.02);
         }
+        .copy-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .copy-button:hover {
+            background-color: #45a049;
+        }
         .footer {
             text-align: center;
             font-size: 18px;
@@ -187,7 +205,11 @@ st.markdown('<div class="title">Welcome to the Student Fun App!</div>', unsafe_a
 if st.button("Get Fun Fact"):
     english_fact, urdu_fact = get_fun_fact()
     st.markdown(f'<div class="fact">{english_fact}</div>', unsafe_allow_html=True)
+    if st.button("Copy English Fact"):
+        st.write('Copied to clipboard:', english_fact)
     st.markdown(f'<div class="urdu-text">{urdu_fact}</div>', unsafe_allow_html=True)
+    if st.button("Copy Urdu Fact"):
+        st.write('Copied to clipboard:', urdu_fact)
 
 # Footer
 st.markdown("""
