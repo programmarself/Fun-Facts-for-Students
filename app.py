@@ -150,7 +150,7 @@ st.markdown("""
         }
         .urdu-text {
             font-family: 'Jameel Noori Nastaleeq Kasheeda', serif;
-            font-size: 18px;
+            font-size: 30px;
         }
     </style>
 """, unsafe_allow_html=True)
