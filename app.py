@@ -21,8 +21,11 @@ st.set_page_config(page_title="Fun Facts for Students", page_icon=":star:", layo
 # Add custom CSS for styling
 st.markdown("""
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jameel+Noori+Nastaleeq:wght@400&display=swap'); /* Use your web-accessible font URL */
+    
     body {
         background-color: #f0f4f8;
+        font-family: 'Jameel Noori Nastaleeq', sans-serif;
     }
     .stButton button {
         background-color: #4CAF50;
@@ -46,6 +49,7 @@ st.markdown("""
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         padding: 20px;
         margin: 20px 0;
+        font-family: 'Jameel Noori Nastaleeq', sans-serif;
     }
     .footer {
         text-align: center;
