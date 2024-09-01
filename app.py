@@ -131,7 +131,7 @@ st.markdown("""
             color: #4CAF50;
         }
         .fact {
-            font-size: 20px;
+            font-size: 30px;
             color: #333;
             margin-bottom: 20px;
         }
