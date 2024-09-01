@@ -122,22 +122,51 @@ st.set_page_config(page_title="Student Fun App", page_icon=":tada:")
 # Add CSS for styling
 st.markdown("""
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/earlyaccess/notonastaliqurdudraft.css');
+
         body {
-            font-family: 'Times New Roman (Headings CS)';
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #333;
         }
         .title {
             text-align: center;
-            font-size: 36px;
+            font-size: 40px;
+            font-weight: 700;
             color: #4CAF50;
+            margin-top: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
         .fact {
-            font-size: 30px;
-            color: #333;
+            font-size: 22px;
+            color: #444;
             margin-bottom: 20px;
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .fact:hover {
+            transform: scale(1.02);
+        }
+        .urdu-text {
+            font-family: 'Noto Nastaliq Urdu Draft', serif;
+            font-size: 22px;
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .urdu-text:hover {
+            transform: scale(1.02);
         }
         .footer {
             text-align: center;
-            font-size: 16px;
+            font-size: 18px;
             color: #555;
             margin-top: 50px;
         }
@@ -147,10 +176,6 @@ st.markdown("""
         }
         .footer a:hover {
             text-decoration: underline;
-        }
-        .urdu-text {
-            font-family: 'Jameel Noori Nastaleeq Kasheeda', serif;
-            font-size: 30px;
         }
     </style>
 """, unsafe_allow_html=True)
